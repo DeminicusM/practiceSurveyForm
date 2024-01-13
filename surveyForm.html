@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Music Survey Form</title>
+    <link rel="stylesheet" href="surveyForm.css" />
+  </head>
+  <body>
+    <h1 id="title">Music Survey</h1>
+    <p id="description">This is a music genre survey to find out the most popular style of music.</p>
+  <form id="survey-form">
+   <label id="name-label">Full Name: <input id="name" placeholder="Full Name Here" required/> </label>
+   <label id="email-label"> Email: <input id="email" type="email" placeholder="Email Here" required/> </label>
+    <label id="number-label"> Age:<input id="number" type="number" placeholder="Age Here" min="1" max="100"/> </label>
+  
+     <label for="dropdown">How did you hear about us?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Hip-Hop</option>
+            <option value="2">R&B</option>
+            <option value="3">Pop</option>
+            <option value="4">Afrobeats</option>
+          </select>
+           </label>
+<label for="prefer1artist">
+      <input type="radio" value="artist" name="prefer1"/> Artist
+    </label>
+<label for="prefer1producer">
+      <input value="producer" type="radio" name="prefer1"/> Producer
+    </label>
+<label for="preferbeat2">
+      <input type="radio" value="beat" name="prefer2"/> Beat
+    </label>
+<label for="preferlyrics2">
+      <input value="lyrics" type="radio" name="prefer2"/> Lyrics
+    </label>
+<label>
+  <input type="checkbox" value="work"/>Work
+  <input type="checkbox" value="home"/>Home
+</label>
+<textarea id="describe" name="describe" rows="3" cols="30" placeholder="My taste of music..."></textarea>
+<button id="submit" type="submit">Submit</button>
+  </form>
+  </body>
